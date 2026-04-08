@@ -56,7 +56,7 @@ I build things across the full stack — from bare-metal firmware on ESP32s and 
 </p>
 
 <p align="center">
-  <b>Also:</b> Verilog · ARM Assembly · SQL · React Native/Expo · ESP32 · STM32 · PlatformIO · MQTT · NimBLE · Vivado/Xilinx · NASA F Prime · Zephyr RTOS · Signal Processing · FPGA · Raspberry Pi Pico
+  <b>Also:</b> Verilog · ARM Assembly · SQL · React Native/Expo · ESP32 · STM32 · PlatformIO · MQTT · NimBLE · Vivado/Xilinx · NASA F Prime · Zephyr RTOS · Signal Processing · FPGA
 </p>
 
 ---
