@@ -194,7 +194,7 @@ I build things across the full stack, from bare-metal firmware on ESP32s and FPG
 ### Beyond Code
 
 <p align="center">
-Vice President of **NSBE @ UGA** · Brother of **Theta Tau** · **Tau Beta Pi** Honor Society · Former **Capital One** Intern · Global traveler · Half-marathon runner · Songwriter & music enthusiast
+Vice President of <b>NSBE @ UGA</b> · Brother of <b>Theta Tau</b> · <b>Tau Beta Pi</b> Honor Society · Former <b>Capital One</b> Intern · Global traveler · Half-marathon runner · Songwriter & music enthusiast
 </p>
 
 <p align="center">
