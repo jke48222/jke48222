@@ -139,9 +139,9 @@ I build things across the full stack, from bare-metal firmware on ESP32s and FPG
   </tr>
   <tr>
     <td width="50%">
-      <h3 align="center">XR Portfolio</h3>
+      <h3 align="center">VR Portfolios</h3>
       <p align="center">
-        Two advanced XR experiences for Meta Quest 3: a VR Mini Museum and a Mixed Reality Room. Spatial audio, depth occlusion, passthrough, hand tracking, and an AI NPC assistant powered by Wit.ai with lip-synced responses.
+        Portfolio 1 showcases four simple Unity-based VR demos showcasing transformation, physics, immersion, and interaction. Portfolio 2 showcases two advanced XR experiences for Meta Quest 3: a VR Mini Museum and a Mixed Reality Room. Spatial audio, depth occlusion, passthrough, hand tracking, and an AI NPC assistant powered by Wit.ai with lip-synced responses.
       </p>
       <p align="center">
         <img src="https://img.shields.io/badge/Unity_URP-000?style=flat-square&logo=unity&logoColor=white" />
