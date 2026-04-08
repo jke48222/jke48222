@@ -198,5 +198,5 @@ Vice President of **NSBE @ UGA** · Brother of **Theta Tau** · **Tau Beta Pi** 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=120&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=58A6FF&height=80&section=footer" alt="footer" width="100%" />
 </p>
