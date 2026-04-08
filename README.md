@@ -196,7 +196,6 @@ I build things across the full stack, from bare-metal firmware on ESP32s and FPG
 <p align="center">
 Vice President of **NSBE @ UGA** · Brother of **Theta Tau** · **Tau Beta Pi** Honor Society · Former **Capital One** Intern · Global traveler · Half-marathon runner · Songwriter & music enthusiast
 </p>
----
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=58A6FF&height=80&section=footer" alt="footer" width="100%" />
