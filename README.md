@@ -28,7 +28,7 @@
 
 ---
 
-I build things across the full stack — from bare-metal firmware on ESP32s and FPGAs to immersive 3D web and VR experiences. Currently finishing my senior capstone, leading NSBE at UGA, and looking for full-time opportunities in embedded systems, XR, or software engineering.
+I build things across the full stack, from bare-metal firmware on ESP32s and FPGAs to immersive 3D web and VR experiences. Currently finishing my senior capstone, leading NSBE at UGA, and looking for full-time opportunities in embedded systems, XR, or software engineering.
 
 ---
 
