@@ -1,202 +1,76 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=58A6FF&height=120&section=header" width="100%" />
+# Jalen Edusei
 
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2500&pause=500&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=Hey%2C+I'm+Jalen+Edusei+%F0%9F%91%8B;Embedded+Systems+%7C+Full+Stack+%7C+XR+Developer" alt="Typing SVG" />
-  </a>
-</h1>
+**Computer Systems Engineer.** B.S., University of Georgia, Morehead Honors College, May 2026, cum laude.
 
-<h3 align="center">Computer Systems Engineering · University of Georgia · Morehead Honors College · 2026</h3>
+[jalenedusei.com](https://www.jalenedusei.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/jalenedusei/) &nbsp;·&nbsp; [CV](https://www.jalenedusei.com/cv.pdf) &nbsp;·&nbsp; jalen.edusei@gmail.com
 
-<br />
+I work from bare metal up: ESP32 and FPGA firmware, macOS systems programming in Swift, and full-stack web. I am looking for full-time new-grad roles in software, embedded, or full-stack engineering.
 
-<p align="center">
-  <a href="https://www.jalenedusei.com" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-jalenedusei.com-58A6FF?style=for-the-badge&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://www.linkedin.com/in/jalenedusei/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-jalenedusei-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:jalen.edusei@gmail.com">
-    <img src="https://img.shields.io/badge/Email-jalen.edusei-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=jke48222&label=Profile%20views&color=58A6FF&style=flat" alt="Profile views" />
-</p>
+The habit that runs through everything below is measuring instead of asserting. Each project ships with the number that justifies it, and when the answer was no, the repo says so.
 
 ---
 
-I build things across the full stack, from bare-metal firmware on ESP32s and FPGAs to immersive 3D web and VR experiences. Currently looking for full-time opportunities in embedded systems, XR, or software engineering.
+## Selected work
+
+### Systems and AI infrastructure
+
+| Project | What it is | The measurement |
+| --- | --- | --- |
+| [Exocortex](https://github.com/jke48222/exocortex) | Local-first memory every AI tool can share, over one frozen MCP contract | 100,106-event encrypted store; recovered 31,328 iMessages out of Apple's typedstream `attributedBody`; hybrid BM25 and binary-vector retrieval finds the right document 95% of the time on paraphrased queries against 55% for keywords alone |
+| [WindowPet](https://github.com/jke48222/WindowPet) | A desktop creature that treats your real macOS windows as platformer terrain | 12,500 lines of zero-dependency Swift, 131 tests, ballistic leaps landing within 1.5 points, 0.24% CPU asleep in 48 MB |
+| [Screen-Coach](https://github.com/jke48222/screen-coach) | Name any on-screen control and a cursor lands on it, accessibility tree first, local vision model only as fallback | A warm ScreenCaptureKit stream beat the `screencapture` CLI 7.9 ms to 204 ms at p90; batching cut per-node attribute reads 3.1x; 12 of 12 targets on Chrome |
+
+### Backend and data
+
+| Project | What it is | The measurement |
+| --- | --- | --- |
+| [Relay OMS](https://github.com/jke48222/relay-oms) | Event-driven order management on Elixir and Phoenix that refuses to oversell | Row-locked allocation across four fulfillment centers behind a database constraint that makes oversell unrepresentable; `Idempotency-Key` replay returns the original order; an 8-state machine where a lost race resolves to a clean 409 |
+| [Live Election Platform](https://github.com/jke48222/live-election-platform) | Presenter-paced live voting; a campus election ran on it with real candidates | 14 races and 39 candidates on a dues-checked roster, one vote per position enforced by a database constraint rather than the interface, so a duplicate gives an attacker no signal. Multi-tenant rewrite on plain Postgres with row-level security that fails closed |
+| [Trading harness](https://github.com/jke48222/trading-harness) | Paper-account backtesting run like research, not like a demo | 7 pre-registered trials in an append-only ledger, 114 runs across 52 configurations, in-sample and out-of-sample splits, 10,000-resample bootstrap under Bonferroni. One portfolio-level effect survived, at t = 2.91 |
+
+### Embedded and hardware
+
+| Project | What it is | The measurement |
+| --- | --- | --- |
+| **AnimalDot** (capstone) | A pet bed that measures heart and respiration rate without touching the animal | A geophone under the mattress picks up the mechanical shock of each heartbeat; DC removal, kurtosis-based motion rejection, and a hand-rolled forward-and-backward Butterworth pass on the microcontroller for zero phase distortion. Respiration is recovered by amplitude-demodulating the heartbeat envelope |
+| **PrimeForge** (FPGA) | Segmented Sieve of Eratosthenes and trial-division engine on a Nexys A7-100T | Direct indexing inferred thousands of tiny RAM primitives, so every access was restructured into a three-phase registered read-modify-write that maps onto block RAM. On the board it counted all 5,761,455 primes below 100 million |
+| [PARMCO](https://github.com/jke48222/parmco) | An iPhone that spins a real 12 V motor over BLE, with no Bluetooth framework in between | A 2,337-line GATT server written by hand on BlueZ and GDBus, a NoInputNoOutput pairing agent so the phone reconnects unattended, 20 kHz hardware PWM, and RPM telemetry streamed back every 200 ms |
+| [Album-Art LED Matrix](https://github.com/jke48222/album-art-matrix) | An LED wall that shows whatever is playing, over a colour-managed HUB75 pipeline | A C render daemon pinned to an isolated CPU core so no scheduler hiccup shows as a bright row; the backplane program emits its own netlist and BOM, 76 parts across 105 nets, sized in ngspice: 33 ohm series termination cut overshoot from 8.71 V to 6.48, and an NTC limiter cut inrush from 275 A to 15.8 |
+| **MEMESat-1** | Flight software for UGA's CubeSat mission on NASA's F Prime, deployed to a Raspberry Pi CM4 | 90% line coverage, 60% branch coverage |
+| [Audio Tracking Car](https://github.com/jke48222/Audio-Tracking-Car) | A Raspberry Pi car that localizes and drives toward a sound source | Dual-microphone analog front end, ADC signal processing, and PID motor control with optical encoder feedback |
+
+### Web, graphics, and XR
+
+| Project | What it is | The measurement |
+| --- | --- | --- |
+| [Edusei Workstation](https://github.com/jke48222/Edusei-Workstation) | My portfolio, rebuilt as VS Code in the browser so every project is a file you can open | 16,000 lines of TypeScript covering explorer, quick open, command palette, full-text search, a typeable terminal, and nine themes. The landing page scrubs video frame by frame against scroll with no animation library; keeping three.js out of the eager bundle cut 310 KB gzipped from first load |
+| [KUL Enterprises](https://github.com/jke48222/kul-enterprises-website) | Production site for a Georgia freight carrier, shipped solo and live at [kulenterprises.com](https://kulenterprises.com) | 12 style directions built as 20 variants before landing 22 static pages on an 88-property token system; every word editable in a git-backed CMS across 19 typed collections; 482 lines of my own search scoring prefix, one-edit-typo, and run-together matches against a 36-term freight synonym sheet; WCAG AA with ink measured at 12.25 to 1 |
+| [Akilah Mali](https://github.com/jke48222/akilahmali) | Official site for an independent Atlanta artist, live at [akilahmali.com](https://www.akilahmali.com) | Music and tour dates arrive through live services rather than hardcoded lists, so nothing on the page can go stale between releases. Static Next.js 16 and React 19 with one API route and no backend to keep running |
+| [Ashfall](https://github.com/jke48222/ashfall) | A time-travel puzzle framework in Unreal: one Pompeii block toggles between the living city and the eruption | The authoritative state machine lives in an editor-world subsystem, so 32 assertions drive the entire loop headlessly with no window and no person. 1,333 lines of C++ over a procedurally built level. Never played, and the README says so |
+| [Kitchen Chaos VR](https://github.com/jke48222/VR-Final-Project) | Two-player Overcooked in VR for Quest 3, where you physically catch what you drop | 120-second rounds across 29 randomized themes; movement written against the raw input system rather than a locomotion rig, including a projectile-simulated teleport arc; a language model performs the verdict on each plate |
+| [VR Portfolio 1](https://github.com/jke48222/VR-Portfolio-1) and [2](https://github.com/jke48222/VR-Portfolio-2) | Unity XR demos for Quest 3: transformation, physics, and interaction, then a VR museum and a mixed-reality room | Spatial audio, depth occlusion, passthrough, hand tracking, and an NPC assistant on Wit.ai with lip-synced responses |
+| [Übersicht widget suite](https://github.com/jke48222/widget-suite) | 12 desktop widgets for macOS, each its own repo | Now playing as a spinning record, a dot-matrix travel globe, clipboard history with secret masking, NASA APOD, and nine more |
+
+Some work is not linkable here because the repositories are private: a broker-vetting and credit-limit portal for a freight carrier where every judgement is permanent and attributable, and a damage-claim evidence verifier that treats the photo as evidence and the accompanying text as a suspect, with a twelve-pattern prompt-injection detector that force-flags a row so it can never auto-resolve.
 
 ---
 
-### Languages & Tools
+## Stack
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cpp,cs,java,py,ts,js,r,html,css,matlab&theme=dark" alt="Languages" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,tailwind,supabase,threejs,vite,vercel,npm,wordpress&theme=dark" alt="Web" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=unity,unreal,arduino,raspberrypi,docker,git,github,figma,latex,blender&theme=dark" alt="Tools" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=linux,windows,apple,vscode,powershell,ableton&theme=dark" alt="Platforms" />
-  </a>
-</p>
+**Languages** &nbsp; C, C++, Swift, Python, TypeScript, JavaScript, C#, Java, Verilog, ARM assembly, SQL, MATLAB, R
 
-<p align="center">
-  <b>Also:</b> Verilog · ARM Assembly · SQL · React Native/Expo · ESP32 · STM32 · PlatformIO · MQTT · NimBLE · Vivado/Xilinx · NASA F Prime · Zephyr RTOS · Signal Processing · FPGA
-</p>
+**Embedded and hardware** &nbsp; ESP32, STM32, Raspberry Pi, PlatformIO, Zephyr RTOS, NASA F Prime, MQTT, NimBLE, BlueZ, Vivado, Nexys A7, PCB design, ngspice, signal processing
+
+**Web and backend** &nbsp; React, Next.js, Node.js, Elixir and Phoenix, PostgreSQL, Supabase, Tailwind, Vite, Three.js and React Three Fiber, Docker, Vercel
+
+**Apple and XR** &nbsp; SwiftUI, AppKit, Core Text, ScreenCaptureKit, Accessibility APIs, Unity, Unreal, OpenXR, Meta XR SDK
+
+**AI** &nbsp; Model Context Protocol, agentic tool-use loops, local quantized vision and embedding models, retrieval systems
 
 ---
 
-### Featured Projects
+## Background
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">AnimalDot</h3>
-      <p align="center">
-        Smart pet bed with passive vital-sign monitoring (HR, RR, temp, weight) using geophone vibration sensing, load cells, and a DHT22. Seven-module ESP32 firmware in PlatformIO, BedDot-compatible MQTT protocol, and a React Native/Expo companion app.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" />
-        <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black" />
-        <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white" />
-        <img src="https://img.shields.io/badge/PlatformIO-F5822A?style=flat-square&logo=platformio&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center"><a href="https://github.com/jke48222/Edusei-Workstation">Edusei Workstation</a></h3>
-      <p align="center">
-        Immersive 3D portfolio with a retro CRT terminal, cinematic camera transitions, and interactive project exploration. Built with React Three Fiber, Zustand, and Framer Motion. Live at <a href="https://www.jalenedusei.com">jalenedusei.com</a>.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/React_Three_Fiber-000?style=flat-square&logo=threedotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Kitchen Chaos VR</h3>
-      <p align="center">
-        Overcooked-style multiplayer VR cooking game for Meta Quest 3. Physics-driven interactions, VelNet networking, AI dish judge via REST API with TTS narration, and a recipe/scoring pipeline built on ScriptableObjects.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Unity-000?style=flat-square&logo=unity&logoColor=white" />
-        <img src="https://img.shields.io/badge/Meta_Quest_3-0467DF?style=flat-square&logo=meta&logoColor=white" />
-        <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center">NSBE Live Election Platform</h3>
-      <p align="center">
-        Real-time chapter election system with live vote tallying, role-based access control, and instant results broadcasting. Built during a record-high application cycle.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Next.js_14-000?style=flat-square&logo=nextdotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white" />
-        <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">MEMESat-1 CubeSat</h3>
-      <p align="center">
-        Flight software for UGA's CubeSat mission using NASA's F Prime framework. Achieved 90% line coverage and 60% branch coverage. Deployed on a custom Linux environment on Raspberry Pi CM4.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/NASA_F_Prime-E03C31?style=flat-square&logo=nasa&logoColor=white" />
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center">FPGA Projects</h3>
-      <p align="center">
-        PrimeForge — segmented sieve of Eratosthenes + trial division engine. FPGAMEMVGA — SD card to DDR2 to VGA sprite display pipeline. Both on Nexys A7-100T in Verilog.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Verilog-848484?style=flat-square" />
-        <img src="https://img.shields.io/badge/Vivado-E01F27?style=flat-square" />
-        <img src="https://img.shields.io/badge/Nexys_A7-5C2D91?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">VR Portfolios</h3>
-      <p align="center">
-        Portfolio 1 showcases four simple Unity-based VR demos showcasing transformation, physics, immersion, and interaction. Portfolio 2 showcases two advanced XR experiences for Meta Quest 3: a VR Mini Museum and a Mixed Reality Room. Spatial audio, depth occlusion, passthrough, hand tracking, and an AI NPC assistant powered by Wit.ai with lip-synced responses.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Unity_URP-000?style=flat-square&logo=unity&logoColor=white" />
-        <img src="https://img.shields.io/badge/OpenXR-3892FF?style=flat-square" />
-        <img src="https://img.shields.io/badge/Meta_XR_SDK-0467DF?style=flat-square&logo=meta&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center">Audio Tracking Car</h3>
-      <p align="center">
-        Autonomous vehicle that navigates toward specific audio frequencies. Python on Raspberry Pi 4 with PID motor control, optical encoder feedback, and ADC signal processing. 200+ commits, Wix user manual.
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white" />
-        <img src="https://img.shields.io/badge/PID_Control-333?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-</table>
+University of Georgia, B.S. Computer Systems Engineering, Morehead Honors College, May 2026, cum laude. Tau Beta Pi. Vice President of NSBE at UGA. Brother of Theta Tau. Former Capital One intern.
 
----
-
-### GitHub Activity
-
-<!-- Streak Stats -->
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=jke48222&theme=github-dark-blue&hide_border=true&background=0d1117" alt="GitHub Streak" />
-</p>
-
-<!-- Activity Graph -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jke48222&theme=github-compact&hide_border=true&bg_color=0d1117&color=58A6FF&line=58A6FF&point=c9d1d9" alt="Activity Graph" />
-</p>
-
-<!--
-  SETUP: GitHub Stats & Top Languages (self-hosted)
-  The public github-readme-stats Vercel instance is unreliable due to rate limits.
-  To get working stats cards, deploy your own:
-  1. Fork https://github.com/anuraghazra/github-readme-stats
-  2. Deploy to Vercel with your GitHub PAT as an env variable
-  3. Replace the URLs below with your Vercel domain
-
-  <img src="https://YOUR-VERCEL.vercel.app/api?username=jke48222&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117" height="170" />
-  <img src="https://YOUR-VERCEL.vercel.app/api/top-langs/?username=jke48222&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117" height="170" />
--->
-
----
-
-### Beyond Code
-
-<p align="center">
-Vice President of <b>NSBE @ UGA</b> · Brother of <b>Theta Tau</b> · <b>Tau Beta Pi</b> Honor Society · Former <b>Capital One</b> Intern · Global traveler · Half-marathon runner · Songwriter & music enthusiast
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=58A6FF&height=80&section=footer" alt="footer" width="100%" />
-</p>
+Outside the terminal: songwriting, half marathons, and a standing argument that the album cover belongs on a wall rather than a lock screen.
