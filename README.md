@@ -51,7 +51,7 @@ The habit that runs through everything below is measuring instead of asserting. 
 | [VR Portfolio 1](https://github.com/jke48222/VR-Portfolio-1) and [2](https://github.com/jke48222/VR-Portfolio-2) | Unity XR demos for Quest 3: transformation, physics, and interaction, then a VR museum and a mixed-reality room | Spatial audio, depth occlusion, passthrough, hand tracking, and an NPC assistant on Wit.ai with lip-synced responses |
 | [Übersicht widget suite](https://github.com/jke48222/widget-suite) | 12 desktop widgets for macOS, each its own repo | Now playing as a spinning record, a dot-matrix travel globe, clipboard history with secret masking, NASA APOD, and nine more |
 
-Some work is not linkable here because the repositories are private: a broker-vetting and credit-limit portal for a freight carrier where every judgement is permanent and attributable, and a damage-claim evidence verifier that treats the photo as evidence and the accompanying text as a suspect, with a twelve-pattern prompt-injection detector that force-flags a row so it can never auto-resolve.
+Some work has no public repository to link: a broker-vetting and credit-limit portal for a freight carrier where every judgement is permanent and attributable, and a damage-claim evidence verifier that treats the photo as evidence and the accompanying text as a suspect, with a twelve-pattern prompt-injection detector that force-flags a row so it can never auto-resolve.
 
 ---
 
