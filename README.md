@@ -8,7 +8,7 @@ I work from bare metal up: ESP32 and FPGA firmware, macOS systems programming in
 
 The habit that runs through everything below is measuring instead of asserting. Each project ships with the number that justifies it, and when the answer was no, the repo says so.
 
-<a href="https://github.com/jke48222/widget-suite"><img src="https://raw.githubusercontent.com/jke48222/widget-suite/main/homescreen.gif" alt="The Übersicht widget suite: 12 macOS desktop widgets running together" width="100%"></a>
+<a href="https://github.com/jke48222/widget-suite"><img src="https://raw.githubusercontent.com/jke48222/widget-suite/main/homescreen.png" alt="The Übersicht widget suite: 16 macOS desktop widgets composed on one desktop" width="100%"></a>
 
 <sub>The [Übersicht widget suite](https://github.com/jke48222/widget-suite): 16 macOS desktop widgets sharing one design system, listed in the official gallery.</sub>
 
