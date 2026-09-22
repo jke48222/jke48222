@@ -10,7 +10,7 @@ The habit that runs through everything below is measuring instead of asserting. 
 
 <a href="https://github.com/jke48222/widget-suite"><img src="https://raw.githubusercontent.com/jke48222/widget-suite/main/homescreen.gif" alt="The Übersicht widget suite: 12 macOS desktop widgets running together" width="100%"></a>
 
-<sub>The [Übersicht widget suite](https://github.com/jke48222/widget-suite): 12 macOS desktop widgets sharing one design system, listed in the official gallery.</sub>
+<sub>The [Übersicht widget suite](https://github.com/jke48222/widget-suite): 16 macOS desktop widgets sharing one design system, listed in the official gallery.</sub>
 
 ---
 
@@ -53,7 +53,7 @@ The habit that runs through everything below is measuring instead of asserting. 
 | [Ashfall](https://github.com/jke48222/ashfall) | A time-travel puzzle framework in Unreal: one Pompeii block toggles between the living city and the eruption | The authoritative state machine lives in an editor-world subsystem, so 32 assertions drive the entire loop headlessly with no window and no person. 1,333 lines of C++ over a procedurally built level. Never played, and the README says so |
 | [Kitchen Chaos VR](https://github.com/jke48222/VR-Final-Project) | Two-player Overcooked in VR for Quest 3, where you physically catch what you drop | 120-second rounds across 29 randomized themes; movement written against the raw input system rather than a locomotion rig, including a projectile-simulated teleport arc; a language model performs the verdict on each plate |
 | [VR Portfolio 1](https://github.com/jke48222/VR-Portfolio-1) and [2](https://github.com/jke48222/VR-Portfolio-2) | Unity XR demos for Quest 3: transformation, physics, and interaction, then a VR museum and a mixed-reality room | Spatial audio, depth occlusion, passthrough, hand tracking, and an NPC assistant on Wit.ai with lip-synced responses |
-| [Übersicht widget suite](https://github.com/jke48222/widget-suite) | 12 desktop widgets for macOS, each its own repo | Now playing as a spinning record, a dot-matrix travel globe, clipboard history with secret masking, NASA APOD, and nine more |
+| [Übersicht widget suite](https://github.com/jke48222/widget-suite) | 16 desktop widgets for macOS, each its own repo | Now playing as a spinning record, a dot-matrix travel globe, a playable drum machine and piano synthesized in the widget, a board of every running coding agent, a Raspberry Pi fleet monitor, a pet that lives behind your windows, and ten more |
 
 Some work has no public repository to link: a broker-vetting and credit-limit portal for a freight carrier where every judgement is permanent and attributable, and a damage-claim evidence verifier that treats the photo as evidence and the accompanying text as a suspect, with a twelve-pattern prompt-injection detector that force-flags a row so it can never auto-resolve.
 
