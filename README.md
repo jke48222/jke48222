@@ -74,4 +74,4 @@ Some work has no public repository to link: a broker-vetting and credit-limit po
 
 University of Georgia, B.S. Computer Systems Engineering, Morehead Honors College, May 2026, cum laude. Tau Beta Pi. Vice President of NSBE at UGA. Brother of Theta Tau. Former Capital One intern.
 
-Outside the terminal: songwriting, half marathons, and a standing argument that the album cover belongs on a wall rather than a lock screen.
+Outside the terminal: songwriting, half marathons, traveling, and a music fanatic.
