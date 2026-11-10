@@ -4,7 +4,7 @@
 
 [jalenedusei.com](https://www.jalenedusei.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/jalenedusei/) &nbsp;·&nbsp; [CV](https://www.jalenedusei.com/cv.pdf) &nbsp;·&nbsp; jalen.edusei@gmail.com
 
-I work from bare metal up: ESP32 and FPGA firmware, macOS systems programming in Swift, and full-stack web. I am looking for full-time new-grad roles in software, embedded, or full-stack engineering.
+I work from bare metal up: ESP32 and FPGA firmware, macOS systems programming in Swift, and full-stack web. I am a Full Stack Developer at Yamaha Motor Corporation, U.S.A.
 
 The habit that runs through everything below is measuring instead of asserting. Each project ships with the number that justifies it, and when the answer was no, the repo says so.
 
